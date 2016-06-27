@@ -7,6 +7,7 @@ class SubscribersController < ApplicationController
 	def create
 		@subscriber = Subscriber.new(subscriber_params)
 		if @subscriber.save
+			FsboMailer.send_signup_email(@user).deliver
 			redirect_to subscribers_path
 		else
 			render 'new'
@@ -17,4 +18,5 @@ class SubscribersController < ApplicationController
 	def subscriber_params
 		params.require(:subscriber).permit(:email)
 	end
+
 end
