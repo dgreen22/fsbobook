@@ -1,0 +1,40 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+Rails version 4.2
+Ruby version 2.2 
+
+Heroku Server
+Git Repository Used 
+
+
+To Deploy:
+Git add .
+Git commit -m "enter name here"
+Git push origin master
+Git push heroku master
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
