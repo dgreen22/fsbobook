@@ -28,7 +28,7 @@ $(document).ready(function(){
 	});
 
 	$(".land-script-1 h1").fadeIn(4000,function(){
-		$(this).fadeOut(3000,function(){
+		$(".land-script-1").fadeOut(3000,function(){
 			$(".land-script-2 h1").fadeIn(4000,function(){
 				$(this).fadeOut(3000,function(){
 					$(".land-script-3 h1").fadeIn(4000);
@@ -43,7 +43,7 @@ $(document).ready(function(){
 		}, 500);
 	});
 
-	$('#orderBtn').on('click', function(){
+	$('.orderBtn').on('click', function(){
 		$('#orderModal').fadeIn(500)
 	});
 
@@ -51,7 +51,19 @@ $(document).ready(function(){
 		$('#orderModal').fadeOut(500)
 	});
 
+	var scrollAmount = 300
 
+	$(window).scroll(function(){
+		if($(window).scrollTop() > scrollAmount){
+			$('a.back-to-top').fadeIn('slow');
+		}
+		else {
+			$('a.back-to-top').fadeOut('slow');
+		}
+	});
 
-	
+	$('a.back-to-top').click(function(){
+		$('html, body').animate({scrollTop:0}, 700);
+		return false;
+	});	
 });

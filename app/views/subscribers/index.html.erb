@@ -8,86 +8,102 @@
 			</div><!--/col-xs-12-->
 			<div class="col-xs-12 col-sm-6 mainland">
 				<div class="land-script-1">
-					<h1> It's The Largest Purchase of Your Life </h1>					
+					<h1> Your Home is Your Largest Asset... </h1>					
 				</div><!--/land-script-1-->
 				<div class="land-script-2">
-					<h1> When Selling Yourself...Sell It Right. </h1>					
+					<h1> Learn What Mistakes NOT to Make When Selling it on Your Own...</h1>					
 				</div><!--/land-script-2-->
 				<div class="land-script-3">
-					<h1> Purchase Today! </h1>					
+					<h1> Download Your Free Report Now! </h1>					
 				</div><!--/land-script-3-->
-				<button type="button" class="btn btn-success lm-button"> Learn More </button>
+				<button type="button" class="btn btn-success btn-lg lm-button"> Learn More </button>
 			</div><!--/mainland-->
 		</div><!--/row-->
 	</section>
 	<section class="book-group" id="second">
 		<div class="row second-area">
-			<h1> Heres What You'll Get From This E-Report </h1>
+			<h1> Some of the Key Tips You'll Get: </h1>
 			<ul>
-				<li>
+				<li class="list">
 					<h3>
-					<%= image_tag "blue-check.png", class: "responsive checked" %> &nbsp;The #1 Reason For Sale By Owner Sellers Are NOT Successful </h3> 
+					<%= image_tag "blue-check.png", class: "responsive checked" %> &nbsp;The #1 Reason For Sale By Owner Sellers FAIL </h3> 
 				</li>
-				<li>
+				<li class="list">
 					<h3> <%= image_tag "blue-check.png", class: "responsive checked" %> &nbsp; The Top 3 Things You Can Do To Increase Your Chances of Selling Your Home </h3> 
 				</li>
-				<li>
-					<h3> <%= image_tag "blue-check.png", class: "responsive checked" %> &nbsp;What FSBO Sells Better, Homes or Condos? </h3>
+				<li class="list">
+					<h3> <%= image_tag "blue-check.png", class: "responsive checked" %> &nbsp;The Key Differences Between Selling a Home & a Condo</h3>
 				</li>
-				<li>
+				<li class="list">
+					<h3> <%= image_tag "blue-check.png", class: "responsive checked" %> &nbsp;How to Determine if You Have a Prime For Sale By Owner Property </h3> 
+				</li>
+				<li class="list">
+					<h3> <%= image_tag "blue-check.png", class: "responsive checked" %> &nbsp;How to Deal With Realtors with Buyers</h3> 
+				</li>
+				<li class="list">
 					<h3> <%= image_tag "blue-check.png", class: "responsive checked" %> &nbsp;How to Handle Realtors Asking You To List </h3> 
 				</li>
+				<li class="list">
+				<h3> <%= image_tag "blue-check.png", class: "responsive checked" %> &nbsp;Plus More... </h3> 
+				</li>				
 			</ul>
 		</div><!--/row-->
 	</section>
 	<section class="book-group" id="third">
 		<div class="row">
-		  <h1> Get Your Copy Today! </h1>
+		  <h1> Download Your Free Copy Now</h1>
 		  <div class="col-xs-6 payment-book">
 			<%= image_tag "fsbo-book.jpg", class: "book-image" %>
-			<p> Text Here </p>
+			
 		  </div><!--/payment-book-->
 		  <div class="col-xs-6 payment-details">
-		  	<h2> What's Included: </h2>
-		  	<ul>
-		  		<li> Top 3 tips that ensure your success as a FSBO </li>
-		  		<li> The #1 thing you can do to avoid being a FSBO failure </li>
-		  		<li> When you should consider NOT selling your own home </li>
-		  		<li> How long you should expect it to take to sell your home </li>
-		  		<li> Other tips and smart strategies to get the top dollar for your home </li>
-		  	</ul>
+		  	<h1> The best FREE online tips to selling your own home is a click away.</h1>
+		  	
 		  
-		  	<button type="button" class="btn btn-primary btn-lg" id="orderBtn">I Want a Free FSBO Guide</button>
+		  	<button type="button" class="btn btn-primary btn-lg btn-1 orderBtn">I Want a Free FSBO Report</button>
 
 		  	<div id="orderModal" class="modal">
 
 			  <div class="modal-content">
 			    <span class="close">x</span>
-			    <%= form_for @subscriber do |s| %>
-			    	<%= s.label :email %>
-			    	<%= s.text_field :email %>
+			    	<div class="subscribe-info">
+				    	<%= form_for @subscriber do |s| %>
+				    	<%= s.label :first_name, class: "subscribe-label" %>
+				    	<%= s.text_field :first_name, class: "subscribe-input" %> <br />
 
-			    	<%= s.submit "Send me my FSBO Report", class: "btn btn-primary" %>
+				    	<%= s.label :last_name, class: "subscribe-label" %>
+				    	<%= s.text_field :last_name, class: "subscribe-input" %>
+				    	<br />
+
+				    	<%= s.label :email, class: "subscribe-label" %>
+				    	<%= s.text_field :email, class: "subscribe-input" %>
+				    	<br /><br />
+
+				    	<%= s.submit "Send me my FSBO Report", class: "btn btn-primary fsbo-send" %>
+				    </div><!--subscribe-info-->
 			    <% end %>
 			  </div>
 
-			</div>
+			</div><!--/.modal-content-->
 		  </div><!--/payment-details-->
 		</div><!--/row-->
 	</section>
 	<section class="book-group" id="fourth">
 		<div class="row">
 		  <h1> About Us </h1>
-		  <div class="col-xs-12 about-us">
+		  <div class="about-us">
 			<div class="col-xs-6 brz">
-				<%= image_tag "brz-logo.svg", class: 'breeze-logo' %>
-				<h2> Breeze Street is an online platform dedicated to for sale by owner sellers.  With over $75 million in homes listed and sold throughout Ontario, and over $1.5 million dollars in commissions saved by successful sellers, Breeze Street has serving the needs of for sale by owner sellers.</h2> 
+				<%= image_tag "brz-logo2.png", class: 'breeze-logo', alt: "Breeze Street Logo" %>
+				<h3> Breeze Street is an online platform dedicated to for sale by owner sellers.  With over $75 million in homes listed and sold throughout Ontario, and over $1.5 million dollars in commissions saved by successful sellers, Breeze Street is a leader in assisting home owners.</h3> 
 			</div><!--/col-xs-6-->
 			<div class = "col-xs-6 gcr">
-				<%= image_tag "gcr-logo.svg", class: "gcr-logo" %>
-				<h2> An innovative, flat-fee real estate brokerage that's been focused since its inception on changing how home owners expect to sell their home.  Green Cloud continues to innovate being the first flat-fee, full service brokerage in Canada. </h2>
+				<%= image_tag "gcr-logo.png", class: "gcr-logo", alt: "Green Cloud Realty Logo" %>
+				<h3> An innovative, flat-fee real estate brokerage that's been focused since its inception on changing how home owners expect to sell their home.  Green Cloud continues to innovate being the first flat-fee, full service brokerage in Canada. </h3>
 		    </div><!--/col-xs-6-->
-		   </div><!--/about-us-->
+		  </div><!--/about-us-->
 		</div><!--/row-->
+		<div class="row">
+			<button type="button" class="btn btn-primary btn-lg btn-2 orderBtn" id="orderBtn">I Want a Free FSBO Report</button>
+		</div>
 	</section>
 </div>
