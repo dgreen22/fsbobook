@@ -1,3 +1,4 @@
 class Subscriber < ActiveRecord::Base
 
-	end
+	validates_presence_of :email, :first_name, :last_name
+end
