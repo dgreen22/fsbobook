@@ -14,7 +14,7 @@
 					<h1> Learn What Mistakes NOT to Make When Selling it on Your Own...</h1>					
 				</div><!--/land-script-2-->
 				<div class="land-script-3">
-					<h1> Download Your Free Report Now! </h1>					
+					<h1> Download Your Free Guide Now! </h1>					
 				</div><!--/land-script-3-->
 				<button type="button" class="btn btn-success btn-lg lm-button"> Learn More </button>
 			</div><!--/mainland-->
@@ -57,10 +57,10 @@
 			
 		  </div><!--/payment-book-->
 		  <div class="col-xs-6 payment-details">
-		  	<h1> The best FREE online tips to selling your own home is a click away.</h1>
+		  	<h1> The best FREE online guide to selling your own home is a click away.</h1>
 		  	
 		  
-		  	<button type="button" class="btn btn-primary btn-lg btn-1 orderBtn">I Want a Free FSBO Report</button>
+		  	<button type="button" class="btn btn-primary btn-lg btn-1 orderBtn">I Want my Free FSBO Guide</button>
 
 		  	<div id="orderModal" class="modal">
 
@@ -69,22 +69,19 @@
 			    	<div class="subscribe-info">
 				    	<%= form_for @subscriber do |s| %>
 				    	<%= s.label :first_name, class: "subscribe-label" %>
-				    	<%= s.text_field :first_name, class: "subscribe-input" %> <br />
+				    	<%= s.text_field :first_name, class: "subscribe-input", placeholder: "Sally", required: true %> <br />
 
 				    	<%= s.label :last_name, class: "subscribe-label" %>
-				    	<%= s.text_field :last_name, class: "subscribe-input" %>
+				    	<%= s.text_field :last_name, class: "subscribe-input", placeholder: "Seller", required: true %>
 				    	<br />
-
 				    	<%= s.label :email, class: "subscribe-label" %>
-				    	<%= s.text_field :email, class: "subscribe-input" %>
-				    	<br /><br />
-
-				    	<%= s.submit "Send me my FSBO Report", class: "btn btn-primary fsbo-send" %>
-				    </div><!--subscribe-info-->
+				    	<%= s.email_field :email, class: "subscribe-input", placeholder: "sell.my.home@sold.com", required: true %> 	
+				    	<%= s.submit "Email Me My Guide!", class: "btn btn-primary fsbo-send" %>
+				    </div><!--/subscribe-info-->
 			    <% end %>
 			  </div>
 
-			</div><!--/.modal-content-->
+			</div><!--/modal-content-->
 		  </div><!--/payment-details-->
 		</div><!--/row-->
 	</section>

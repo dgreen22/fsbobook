@@ -15,11 +15,13 @@
  */
 
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
  /****** Main Page ******/
-	  
+
 	body {
-		position: relative;
+	  position: relative;
 	  min-height: 100%;
 	}
 
@@ -41,7 +43,6 @@
    	margin-bottom: 20px;
    }
 
-
    section {
   	height: 710px;
   }
@@ -58,6 +59,11 @@
 
   .lm-button{
   	margin-top: 30px;
+  }
+
+  .alert{
+  	margin-top: -20px;
+  	background: #FFCA33;
   }
 /****** Second ******/ 
 
@@ -155,7 +161,7 @@
 	}
 
 	.subscribe-info{
-		text-align: center;
+		margin: auto;
 	}
 
 	.subscribe-label{
@@ -173,10 +179,14 @@
   		float: left;
   		margin-left: 10px;
   		margin-bottom: 10px;
+  		width: 200px;
 	}
 
 	.fsbo-send {
 		display: block;
+		clear: both;
+		margin: auto;
+		margin-top: 80px;
 	}
 
 	/***** Fourth *****/
