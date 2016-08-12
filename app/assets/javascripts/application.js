@@ -28,11 +28,11 @@ $(document).ready(function(){
 		return false;
 	});
 
-	$(".land-script-1 h1").fadeIn(4000,function(){
+	$(".land-script-1 h1").fadeIn(3000,function(){
 		$(".land-script-1").fadeOut(3000,function(){
-			$(".land-script-2 h1").fadeIn(4000,function(){
+			$(".land-script-2 h1").fadeIn(3000,function(){
 				$(this).fadeOut(3000,function(){
-					$(".land-script-3 h1").fadeIn(4000);
+					$(".land-script-3 h1").fadeIn(3=000);
 				});
 			});
 		});
