@@ -32,7 +32,7 @@ $(document).ready(function(){
 		$(".land-script-1").fadeOut(3000,function(){
 			$(".land-script-2 h1").fadeIn(3000,function(){
 				$(this).fadeOut(3000,function(){
-					$(".land-script-3 h1").fadeIn(3=000);
+					$(".land-script-3 h1").fadeIn(3000);
 				});
 			});
 		});
