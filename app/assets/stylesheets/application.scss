@@ -65,6 +65,7 @@
   	margin-top: -20px;
   	background: #FFCA33;
   }
+
 /****** Second ******/ 
 
   #second{
@@ -101,6 +102,7 @@
 	.checked {
 		margin-right: 30px;
 	}
+
 
 /***** Third *****/
 
@@ -366,3 +368,60 @@
 	.btn-2 {
 		margin-top: 70px;
 	}
+
+	/*** Media Queries ***/
+	@media (max-width: 769px){
+  	.book-image{
+  		width: 280px;
+  	}
+  	.mainland{
+  		margin-top: 10px;
+  	}
+  	.land-pic{
+  		margin-top: 10px;
+  	}
+  	.lm-button{
+  		margin-top: 75px;
+  	}
+  	.checked{
+  		float: left;
+  		height: 55px;
+  		margin-right: 20px
+  	}
+  	.payment-details{
+  		margin-top:10px;
+  	}
+  	#first {
+  		height: 600px;
+  	}
+  	#second{
+  		height: 850px;
+  		padding-top: 10px;
+  	}
+  	#third{
+  		padding-top: 10px;
+  	}
+  	#third h1{
+  		margin-bottom: 0;
+  	}
+  	#fourth{
+  		padding-top: 10px;
+  		height: 650px;
+  	}
+  	.btn-1{
+  		margin-top: 20px;
+  	}
+  	.about-us h3{
+  		font-size: 20px;
+  	}
+  	.btn-2{
+  		margin-top: 20px;
+  	}
+  	.subscribe-label{
+  		margin-left: 0px;
+  		text-align: left;
+  	}
+  	.subscribe-input{
+  		margin-left: 0px;
+  	}
+  }
