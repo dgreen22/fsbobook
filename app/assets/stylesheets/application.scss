@@ -370,7 +370,7 @@
 	}
 
 	/*** Media Queries ***/
-	@media (max-width: 769px){
+	@media (max-width: 767px){
   	.book-image{
   		width: 280px;
   	}
@@ -395,7 +395,7 @@
   		height: 600px;
   	}
   	#second{
-  		height: 850px;
+  		height: 915px;
   		padding-top: 10px;
   	}
   	#third{
@@ -406,7 +406,7 @@
   	}
   	#fourth{
   		padding-top: 10px;
-  		height: 650px;
+  		height: 780px;
   	}
   	.btn-1{
   		margin-top: 20px;
@@ -424,4 +424,38 @@
   	.subscribe-input{
   		margin-left: 0px;
   	}
+  }
+
+  @media(max-width: 325px){
+  	.navbar-brand{
+  		font-size: 16px;
+  	}
+  	#first{
+  		height: 640px;
+  	}
+  	#second{
+  		height: 650px;
+  	}
+  	#second h3{
+  		font-size: 16px;
+  	}
+  	#second ul{
+  		margin-top: 0px;
+  	}
+  	.checked{
+  		height: 45px;
+  	}
+  	#third{
+  		height: 740px;
+  	}
+  	#fourth{
+  		height: 660px;
+  	}
+  	.lm-button{
+  		margin-top: 120px;
+  	}
+  	.about-us h3{
+  		font-size: 16px;
+  	}
+
   }
