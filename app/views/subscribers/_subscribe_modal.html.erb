@@ -1,0 +1,20 @@
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close">x</span>
+		<div class="subscribe-info">
+    	<%= form_for @subscriber do |s| %>
+	    	<%= s.label :first_name, class: "subscribe-label" %>
+	    	<%= s.text_field :first_name, class: "subscribe-input", placeholder: "Sally", required: true %> <br />
+
+	    	<%= s.label :last_name, class: "subscribe-label" %>
+	    	<%= s.text_field :last_name, class: "subscribe-input", placeholder: "Seller", required: true %>
+	    	<br />
+	    	<%= s.label :email, class: "subscribe-label" %>
+	    	<%= s.email_field :email, class: "subscribe-input", placeholder: "sell.my.home@sold.com", required: true %> 	
+	    	<%= s.submit "Email Me My Guide!", class: "btn btn-primary fsbo-send" %>
+	    	<br>
+	    	<p class="no-spam"> We hate spam as much as you and will not flood your inbox or sell your trust in us to a 3rd party. </p>
+    	<% end %>
+    </div><!--/subscribe-info-->    
+  </div>
+</div><!--/modal-->

@@ -64,26 +64,8 @@
 		  
 		  	<button type="button" class="btn btn-primary btn-lg btn-1 orderBtn">I Want my Free FSBO Guide</button>
 
-		  	<div id="orderModal" class="modal">
+		  	<%= render 'subscribe_modal' %>
 
-			  <div class="modal-content">
-			    <span class="close">x</span>
-			    	<div class="subscribe-info">
-				    	<%= form_for @subscriber do |s| %>
-				    	<%= s.label :first_name, class: "subscribe-label" %>
-				    	<%= s.text_field :first_name, class: "subscribe-input", placeholder: "Sally", required: true %> <br />
-
-				    	<%= s.label :last_name, class: "subscribe-label" %>
-				    	<%= s.text_field :last_name, class: "subscribe-input", placeholder: "Seller", required: true %>
-				    	<br />
-				    	<%= s.label :email, class: "subscribe-label" %>
-				    	<%= s.email_field :email, class: "subscribe-input", placeholder: "sell.my.home@sold.com", required: true %> 	
-				    	<%= s.submit "Email Me My Guide!", class: "btn btn-primary fsbo-send" %>
-				    </div><!--/subscribe-info-->
-			    <% end %>
-			  </div>
-
-			</div><!--/modal-content-->
 		  </div><!--/payment-details-->
 		</div><!--/row-->
 	</section>
@@ -97,7 +79,7 @@
 			</div><!--/col-xs-6-->
 			<div class = "col-xs-6 gcr">
 				<%= image_tag "gcr-logo.png", class: "gcr-logo", alt: "Green Cloud Realty Logo" %>
-				<h3> An innovative, flat-fee real estate brokerage that's been focused since its inception on changing how home owners expect to sell their home.  Green Cloud continues to innovate being the first flat-fee, full service brokerage in Canada. </h3>
+				<h3> Green Cloud is a Toronto-based real estate brokerage dedicated to innovation and helping home owners sell for a flat-fee, making it Canada's first full-service flat-fee brokerage. Between their flat-fee offering, home buyer's rebate program and their partnership with Breeze Street Inc., the Green Cloud Team has helped hundreds of GTA and Ontario home owners put thousands of dollars back into their pocket when buying or selling their home.</h3>
 		    </div><!--/col-xs-6-->
 		  </div><!--/about-us-->
 		</div><!--/row-->

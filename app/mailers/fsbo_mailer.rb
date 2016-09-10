@@ -1,6 +1,6 @@
 class FsboMailer < ApplicationMailer
 
-	default from: 'For Sale By Owner Guide <fsbo@gmail.com>'
+	default from: 'For Sale By Owner Guide <info@breezestreet.com>'
 
   # send a signup email to the user, pass in the user object that   contains the user's email address
   def send_fsbo_report_email(user)
